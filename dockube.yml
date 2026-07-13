@@ -1,0 +1,14 @@
+# Antora-inspired local content catalog. Add one entry per documentation component/version.
+site:
+  title: Dockube Documentation
+content:
+  sources:
+    - url: ./docs
+      component: dockube
+      title: Dockube
+      version: latest
+      # Optional for a conventional Markdown tree. If omitted, the source root is used.
+      start_path: .
+      # Optional ordered navigation entries; the portal otherwise lists imported pages.
+      nav:
+        - index.md

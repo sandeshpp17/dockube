@@ -1,0 +1,5 @@
+// Templ source is retained as the view contract. The current v1 server uses
+// equivalent compiled Go templates until templ code generation is added to CI.
+package templates
+
+templ Layout(title string) { <html><head><title>{ title }</title></head><body>{ children... }</body></html> }
