@@ -3,12 +3,17 @@ site:
   title: Dockube Documentation
 content:
   sources:
-    - url: ./docs
+    - url: ./docs/product1
       component: dockube
-      title: Dockube
+      title: product1
       version: latest
-      # Optional for a conventional Markdown tree. If omitted, the source root is used.
       start_path: .
-      # Optional ordered navigation entries; the portal otherwise lists imported pages.
+      nav:
+        - index.md
+    - url: ./docs/product2
+      component: dockube
+      title: product2
+      version: "2.0"
+      start_path: .
       nav:
         - index.md
