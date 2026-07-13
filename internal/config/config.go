@@ -5,6 +5,7 @@ package config
 
 import (
 	"fmt"
+	"os"
 	"strings"
 	"time"
 
@@ -365,8 +366,7 @@ func applyOverrides(cfg *Config) {
 
 // getEnv is a helper to get environment variables.
 func getEnv(key string) string {
-	// This is a simple implementation - in production, use os.LookupEnv
-	return "" // Will be replaced with actual env var lookup
+	return os.Getenv(key)
 }
 
 // validateConfig validates the configuration using struct tags.
